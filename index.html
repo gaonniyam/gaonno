@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹사이트 틀</title>
+    <style>
+        body {
+            font-family: pretendard, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            position: relative;
+            width: 100%;
+            height: 68px;
+            overflow: hidden;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+        }
+
+        .navbar1 {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+        }
+        .navbar1 a {
+            color: black;
+            padding: 5px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar1 a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 636px;
+            overflow: hidden;
+        }
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .navbar2 {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar2 a {
+            color: white;
+            padding: 10px 10px;
+            text-decoration: none;
+        }
+        .navbar2 a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .main img {
+            width: 100%;
+            height: auto;
+        }
+
+        .main .img-4 {
+            grid-column: span 2;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 600px; /* 두 이미지의 총 높이 합계 */
+            overflow: hidden;
+        }
+        .footer img {
+            width: 100%;
+            height: 50%; /* 두 이미지가 각각 절반의 높이 차지 */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar1">
+        <!-- 여기 사진 넣으면 됨 -->
+        <a href="#">홈</a>
+    </div>
+
+    <div class="banner">
+        <img src="https://i.ibb.co/gjHJxsM/2024-06-12-5-17-46.png" alt="2024-06-12-5-17-46">
+    </div>
+
+    <div class="navbar2">
+     <a href="#">남성</a>
+    </div>
+    
+    <div class="main">
+        <img src="https://i.ibb.co/dBZKTtB/Main-Image-0.png" alt="Main Image 0">
+        <img src="https://i.ibb.co/MRd8jZ6/Main-Image-1.png" alt="Main Image 1">
+        <img src="https://i.ibb.co/bWtbQMW/Main-Image-2.png" alt="Main Image 2">
+        <img src="https://i.ibb.co/rwv4Cvs/Main-Image-3.png" alt="Main Image 3">
+        <img class="img-4" src="https://i.ibb.co/1bVbzwF/Main-Image-4.png" alt="Main Image 4">
+        <img src="https://i.ibb.co/NxfnZjC/Main-Image-5.png" alt="Main Image 5">
+        <img src="https://i.ibb.co/0KNxFT3/Main-Image-6.png" alt="Main Image 6">
+    </div>
+
+    <div class="footer">
+        <img src="https://i.ibb.co/VtsGkDB/Footer-Image-1.png" alt="Footer Image-1">
+        <img src="https://i.ibb.co/pRYD77m/Footer-Image-2.png" alt="Footer Image-2">
+    </div>
+
+</body>
+</html>
+ㅌ
